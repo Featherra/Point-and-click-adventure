@@ -1,0 +1,97 @@
+body {
+    display: grid;
+    grid-template-columns: auto 800px auto;
+    /* how many values you put in, how many column you get */
+    grid-template-rows: auto 806px auto;
+}
+
+#title {
+    grid-column-start: 2;
+    grid-row-start: 1;
+}
+
+
+#gameWindow {
+    width: 800px;
+    height: 608px;
+    background-color: darkblue;
+    grid-column-start: 2;
+    grid-row-start: 2;
+    position: relative;
+}
+
+#inventoryBox {
+    width: 180px;
+    height: 80px;
+    background-color: black;
+    top: 10px;
+    left: 10px;
+}
+
+#dialogBar {
+    bottom: 0px;
+
+}
+
+#setMainDialog {
+    position: relative;
+    width: 800px;
+    height: 64px;
+    background-color: white;
+}
+
+#heroAvatar {
+    width: 32px;
+    height: 64px;
+    background-color: orange;
+    bottom: 0px;
+
+}
+
+#heroSpeach {
+    width: 300px;
+    background-color: white;
+
+}
+
+#counterSpeach {
+    width: 300px;
+    background-color: white;
+}
+
+#counterAvatar {
+    width: 32px;
+    height: 64px;
+    background-color: red;
+}
+
+#squareTree {
+    width: 64px;
+    height: 64px;
+    background-color: darkgreen;
+
+}
+
+#hero {
+    width: 32px;
+    height: 32px;
+    background-color: pink;
+}
+
+#tileMap {}
+
+.background {
+    position: absolute;
+    z-index: 0;
+}
+
+.character {
+    position: absolute;
+    z-index: 100;
+
+}
+
+.foreground {
+    position: absolute;
+    z-index: 1000;
+}
