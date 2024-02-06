@@ -45,37 +45,52 @@ body {
     height: 64px;
     background-color: orange;
     bottom: 0px;
+    left: 0px;
 
 }
 
 #heroSpeach {
     width: 300px;
-    background-color: white;
+    height: 5px;
+    background-color: yellow;
+    bottom: 59px;
+    left: 32px;
 
 }
 
 #counterSpeach {
     width: 300px;
-    background-color: white;
+    height: 5px;
+    background-color: rgb(60, 170, 170);
+    bottom: 59px;
+    left: 500px;
+
 }
 
 #counterAvatar {
     width: 32px;
     height: 64px;
     background-color: red;
+    bottom: 0px;
+    left: 768px;
+
 }
 
 #squareTree {
     width: 64px;
     height: 64px;
     background-color: darkgreen;
-
+    left: 240px;
+    top: 300px;
 }
 
 #hero {
     width: 32px;
     height: 32px;
     background-color: pink;
+    left: 50px;
+    bottom: 90px;
+
 }
 
 #tileMap {}
