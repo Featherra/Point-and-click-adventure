@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Point and click adventure</title>
-    <link rel="stylesheet" href="Css/style.css">
+    <link rel="stylesheet" href="Css/style.css"> <!--style sheet connecrio-->
 </head>
 
 <body>
@@ -15,6 +15,9 @@
     <div id="gameWindow">
         <!--Inventory box-->
         <div id="inventoryBox" class="foreground">
+            <ul id="inventoryList">
+                <li id="inv-key"> key </li>
+            </ul>
 
         </div>
         <!--dialog bar-->
@@ -35,6 +38,7 @@
             </div>
         </div>
         <!--foreground elements-->
+        <div id="key" class="foreground"> </div>
         <div id="squareTree" class="foreground"> </div>
 
         <!--Main character-->
@@ -43,8 +47,13 @@
         <!--background elements-->
         <div id="tileMap" class="background"> </div>
 
+        <div id="door" class="foreground"> </div>
+
+        <!--Easy way: div#key.foreground-->
     </div>
+
 
 </body>
 
 </html>
+<script src="js/main.js"> </script><!--JavaScript connection-->
