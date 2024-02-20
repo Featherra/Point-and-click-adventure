@@ -44,8 +44,7 @@ body {
 #heroAvatar {
     width: 58px;
     height: 64px;
-    background-color: orange;
-    bottom: 0px;
+    bottom: 5px;
     left: 0px;
 
 }
@@ -91,7 +90,7 @@ body {
     width: 32px;
     height: 32px;
     left: 0px;
-    top: 0px;
+    top: 267px;
     bottom: 90px;
     transition: all 1s ease-in-out;
 
@@ -100,24 +99,30 @@ body {
 #doorWizardHut {
     width: 35px;
     height: 55px;
-    background-color: #614533;
     left: 175px;
     top: 298px;
     transition: all 1s ease-in-out;
 }
 
+#statue {
+    width: 30px;
+    height: 63px;
+    left: 704px;
+    top: 283px;
+}
+
 #key {
     width: 10px;
     height: 15px;
-    background-color: rgb(190, 184, 9);
-    left: 250px;
-    bottom: 250px;
+    left: 107px;
+    top: 450 px;
+    bottom: 199px;
 }
 
 #well {
     width: 64px;
     height: 64px;
-    background-color: red;
+    /*background-color: red;*/
     left: 287px;
     top: 101px;
 }

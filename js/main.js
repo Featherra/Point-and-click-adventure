@@ -48,6 +48,10 @@ gameWindow.onclick = function (e) {
                 console.log("Fuck, this door's locked. I need to find a key.");
             }
             break;
+        case "statue":
+            console.log("Hey, pst over here. You seem to be looking for the key, i'll tell you.");
+            console.log("It's hidden by the graves.");
+            break;
         default:
             break;
         // tree1.style.opacity = 1;
@@ -73,7 +77,11 @@ gameWindow.onclick = function (e) {
         console.log(inventory);
 
     }
-
+    /**
+     * Returns string value if it exist within the array
+     * @param {string} itemName 
+     * @returns 
+     */
     function checkItem(itemName) {
         return inventory.includes(itemName);
     }
@@ -91,9 +99,9 @@ gameWindow.onclick = function (e) {
     }
 
     /**
-     * removes 
-     * @param {*} itemName 
-     * @param {*} itemId 
+     * removes items within the array
+     * @param {string} itemName 
+     * @param {string} itemId 
      */
     function removeItem(itemName, itemId) {
         // remove item in array
