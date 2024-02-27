@@ -2,6 +2,7 @@ document.getElementById("mainTitle").innerText = "Point and Click Adventure Game
 
 //Game window reference
 const gameWindow = document.getElementById("gameWindow");
+const sec = 1000;
 
 //Game  state
 gameState = {
@@ -17,6 +18,11 @@ const inventoryList = document.getElementById("inventoryList");
 //Main Character
 const mainCharacter = document.getElementById("hero");
 const offsetCharacter = 16;
+
+// Speech Bubble
+const heroSpeach = document.getElementById("heroSpeach");
+const counterSpeach = document.getElementById("counterSpeach");  // speech written wrong, but else wouldn't work.
+
 
 //Decor/interactables
 const tree1 = document.getElementById("squareTree");
@@ -58,6 +64,7 @@ gameWindow.onclick = function (e) {
             break;
         case "doorWizardHut": // at the door wizard hut
             if (checkItem("key")) { // check if you have the rusty key
+                showMessage(heroSpeach, "i opened the door, yeah!");
                 console.log("I opened the door. Yeah!");
                 console.log(gameState.inventory);
                 changeInventory('key', "remove");
@@ -70,6 +77,7 @@ gameWindow.onclick = function (e) {
             }
             break;
         case "statue":
+            showMessage(heroSpeach, "Hey you, the key is hidden by the graves.");
             console.log("Hey, pst over here. You seem to be looking for the key, i'll tell you.");
             console.log("It's hidden by the graves.");
             break;
@@ -132,4 +140,20 @@ gameWindow.onclick = function (e) {
 
         })
     }
+    /**
+     *  Will show dialog.   
+     * @param {getElementById} targetBubble 
+     * @param {string} message 
+     */
+    function showMessage(targetBubble, message) {
+        targetBubble.innerText = message;
+        targetBubble.style.opacity = 1;
+        setTimeout(hideMessage, 4 * sec, targetBubble);
+    }
+    function hideMessage(targetBubble) {
+        targetBubble.innerText = "...";
+        targetBubble.style.opacity = 0;
+    }
+
+
 }

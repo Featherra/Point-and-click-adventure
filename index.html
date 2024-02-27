@@ -21,18 +21,19 @@
         </div>
         <!--dialog bar-->
         <div id="dialogBar" class="foreground">
+            <div id="brownBar" class="foreground"></div>
             <div id="setMainDialog">
                 <div id="heroAvatar" class="foreground">
                     <img src="img/portairt.png" alt="heroAvatar">
                 </div>
-                <div id="heroSpeach" class="foreground">
-
+                <div id="heroSpeach" class="foreground speechBubble">
+                    Hey
                 </div>
-                <div id="counterSpeach" class="foreground">
-
+                <div id="counterSpeach" class="foreground speechBubble">
+                    YO
                 </div>
                 <div id="counterAvatar" class="foreground">
-
+                    <img src="img/portairStatue.png" alt="counter avatar">
                 </div>
             </div>
         </div>
@@ -42,6 +43,7 @@
         <div id="well" class="foreground"> </div>
         <div id="doorWizardHut" class="foreground"> </div>
         <div id="statue" class="foreground"> </div>
+
 
         <!--Main character-->
         <div id="hero" class="character" id="heroimg">
@@ -56,6 +58,14 @@
 
         <!--Easy way: div#key.foreground-->
     </div>
+
+    <audio id="heroAudio">
+        <source src="Audio/Gibberish - Sound Effect_01.mp3">
+    </audio>
+
+    <audio id="counterAudio">
+        <source src="Audio/high pitch voice.mp3">
+    </audio>
 
 
 </body>
