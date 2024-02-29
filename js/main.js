@@ -72,10 +72,10 @@ gameWindow.onclick = function (e) {
             case "well":
                 if (gameState.coinPickedUp == false) {
                     changeInventory("coin", "add");
-                    showMessage(heroSpeach, "i found a coin.", heroAudio);
+                    showMessage(heroSpeach, "i found a coin in the chest, there's a note it says: 'I'm made from wood, inkt is my face.'", heroAudio);
                     gameState.coinPickedUp = true;
                 } else {
-                    console.log("There are no more coins in the well");
+                    console.log("There are no more coins");
                 }
                 //document.getElementById("coin").remove();
                 break;
