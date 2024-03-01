@@ -72,8 +72,8 @@ body {
 #counterAvatar {
     width: 58px;
     height: 64px;
-    bottom: 5px;
-    left: 735px;
+    bottom: 7px;
+    left: 710px;
     opacity: 0;
     transition: all 1s ease-in-out;
 }
@@ -123,12 +123,12 @@ body {
 }
 
 #key {
-    width: 10px;
-    height: 15px;
-    left: 107px;
+    width: 22px;
+    height: 20px;
+    left: 38px;
     top: 450 px;
-    bottom: 199px;
-    background-color: yellow;
+    bottom: 86px;
+    /* background-color: yellow; */
 }
 
 #well {
