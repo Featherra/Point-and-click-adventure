@@ -1,6 +1,7 @@
 document.getElementById("mainTitle").innerText = "Point and Click Adventure Game";
 document.getElementById("objective").innerText = "Objective: Get back home.";
 
+
 //Game window reference
 const gameWindow = document.getElementById("gameWindow");
 const sec = 1000;
